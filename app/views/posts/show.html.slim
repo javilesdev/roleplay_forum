@@ -1,0 +1,3 @@
+- if @post.messages.present?
+  - @post.messages.each do |m|
+    p = (m.body).html_safe

@@ -1,0 +1,10 @@
+$primary:       darken(#6b42ca, 6.5%) !default; // #337ab7
+$secondary:     #5CC5CE !default;
+
+$brand-primary:         $primary !default;
+$brand-success:         $secondary !default;
+$alert-success-bg:      #5CC5CE !default;
+$alert-success-text:    #FFFFFF !default;
+$alert-success-border:  darken(adjust-hue($alert-success-bg, -10), 5%) !default;
+
+@import "bootstrap";

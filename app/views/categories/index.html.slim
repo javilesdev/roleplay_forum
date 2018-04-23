@@ -1,0 +1,22 @@
+-
+
+- if @categories
+  - @categories.each do |c|
+    .card
+      .card-heading.bg-primary.text-white
+        h4 = c.title
+      .card-body style=("padding: 0;")
+        table.table.table-bordered  style=("margin: 0;")
+          tr.bg-secondary.text-white
+            th style=("border: none;")
+              small TITLE
+            th style=("border: none;")
+              small STATISTICS
+            th style=("border: none;")
+              small LAST POST
+        - if c.posts.present?
+          - c.posts.each do |p|
+            tr
+              td
+                h4 = p.title
+                = p.description
