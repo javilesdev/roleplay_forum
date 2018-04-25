@@ -16,7 +16,7 @@
               - category.topics.each do |p|
                 tr
                   td
-                    h4 = p.title
+                    h4 = link_to p.title, p
                     = p.description
                   td
                   td
